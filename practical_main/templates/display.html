@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+  {% for post in display %}
+    <p>{{ post.name }}</p>
+
+        <td><a href="/delete/{{ post.id }}">Delete</a></td>
+  {% endfor %}
+
+</ul>
+</body>
+</html>
