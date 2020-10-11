@@ -6,7 +6,7 @@
 </head>
 <body>
 <ul>
-  {% for post in display %}
+  {% for post in filter_lasttwo %}
     <p>{{ post.name }}</p>
 
         <td><a href="/delete/{{ post.id }}">Delete</a></td>
